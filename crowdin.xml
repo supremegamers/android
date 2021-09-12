@@ -3,14 +3,18 @@
   <remote name="sakura" 
           fetch="https://git@github.com/ProjectSakura" 
           revision="11" />
+  <remote name="sg"
+          fetch="https://github.com/supremegamers"
+          revision="sakura/11-x86"  />
+          
   <default remote="sakura" 
            sync-c="true" 
            sync-j="4"  />
-  <project path="android" name="android" remote="sakura" />
+  <project path="android" name="android" remote="sg" />
   <project path="crowdin" name="crowdin" remote="sakura" revision="master" />
-  <project path="frameworks/base" name="frameworks_base" remote="sakura" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="sakura" />
-  <project path="packages/apps/SakuraSettings" name="packages_apps_SakuraSettings" remote="sakura" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="sg" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="sg" />
+  <project path="packages/apps/SakuraSettings" name="packages_apps_SakuraSettings" remote="sg" revision="11-x86" />
   <project path="packages/apps/Trebuchet" name="packages_apps_Trebuchet" remote="sakura" /> 
   <project path="vendor/addons" name="vendor_addons" remote="sakura" />
 
