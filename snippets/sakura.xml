@@ -2,10 +2,10 @@
 <manifest>
 
   <!--Project Sakura Additions -->
-  <project path="android" name="android" remote="sakura" />
+  <project path="android" name="android" remote="sg" />  
   <project path="art" name="art" groups="pdk" remote="sakura" />  
-  <project path="bionic" name="android_bionic" groups="pdk" remote="sakura" />  
-  <project path="build/make" name="build_make" groups="pdk" remote="sakura" >
+  <project path="bionic" name="android_bionic" groups="pdk" remote="sg" revision="sakura/11-x86" />  
+  <project path="build/make" name="build_make" groups="pdk" remote="sg" revision="sakura/11-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -18,33 +18,25 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="sakura" />  
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="sg" />  
   <project path="external/asus/stitchimage" name="external_asus_stitchimage" groups="pdk-fs" remote="sakura"/>
   <project path="external/faceunlock" name="LordShen/external_faceunlock" remote="gitlab" revision="11" />
   <project path="external/selinux" name="external_selinux" groups="pdk" remote="sakura" />  
-  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="sakura" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="sakura" />
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="sg" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="sg" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" remote="sakura" />
-  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="sakura" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="sg" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="sakura" />  
   <project path="frameworks/support/lottie" name="frameworks_support_lottie" groups="pdk" remote="sakura" />
-  <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="sakura" />  
-  <!--Qcom-caf repos start -->
-  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="sakura" revision="lineage-18.1-caf-msm8998" />
-  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="sakura" revision="lineage-18.1-caf-msm8998" />
-  <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" groups="qcom,pdk-qcom" remote="sakura" revision="lineage-18.1-caf-msm8998" />
-  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="sakura" revision="lineage-18.1-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="sakura" revision="lineage-18.1-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" groups="qcom,pdk-qcom" remote="sakura" revision="lineage-18.1-caf-sm8150" />  
-  <!--Qcom-caf repos end -->
+  <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="sg" />  
   <project path="lineage-sdk" name="lineage-sdk" remote="sakura" />
   <project path="packages/apps/Backgrounds" name="packages_apps_Backgrounds" remote="sakura" />  
   <project path="packages/apps/FaceUnlockService" name="LordShen/packages_apps_FaceUnlockService" remote="gitlab" revision="11" /> 
   <project path="packages/apps/Firewall" name="packages_apps_Firewall" remote="sakura" />     
   <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="sakura" />  
   <project path="packages/apps/OmniStyle" name="packages_apps_Omnistyle" groups="pdk-fs" remote="sakura" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="sakura" /> 
-  <project path="packages/apps/SakuraSettings" name="packages_apps_SakuraSettings" groups="pdk-fs" remote="sakura" /> 
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="sg" /> 
+  <project path="packages/apps/SakuraSettings" name="packages_apps_SakuraSettings" groups="pdk-fs" remote="sg" /> 
   <project path="packages/apps/SakuraWidget" name="packages_apps_SakuraWidget" groups="pdk-fs" remote="sakura" />
   <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="sakura" />  
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs" remote="sakura" />  
@@ -54,12 +46,13 @@
   <project path="packages/services/Telephony" name="LineageOS/android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="sakura" />     
   <project path="prebuilts/prebuiltapks" name="prebuilts_prebuiltapks" remote="sakura" />
-  <project path="system/core" name="system_core" groups="pdk" remote="sakura" />
+  <project path="system/core" name="system_core" groups="pdk" remote="sg" />
   <project path="system/netd" name="system_netd" groups="pdk" remote="sakura" />  
   <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="sakura"/>  
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="sakura" /> 
-  <project path="vendor/addons" name="vendor_addons" remote="sakura" />
-  <project path="vendor/lineage" name="vendor_sakura" remote="sakura" />   
+  <project path="vendor/addons" name="vendor_addons" remote="sg" />
+  <project path="vendor/lineage" name="vendor_lineage" remote="sg" /> 
+  <project path="vendor/ag" name="vendor_ag" remote="sg" />
   <project path="vendor/gapps" name="LordShen/android_vendor_gapps" remote="gitlab" revision="11" clone-depth="1" />
 
   <!-- Clang Proton -->
