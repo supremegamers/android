@@ -14,8 +14,16 @@
 </a>
 <a href="https://t.me/ProjectSakura">
 <img src="https://img.shields.io/badge/Telegram-Chat-blue?style=for-the-badge">
+</a>
 </div>
 
+<div align="center">
+<strong><i>Modified for PC build using Android-Generic Project</i></strong>
+<br>
+<img src="https://i.ibb.co/rf2rv3M/Yep1l4L.png">
+<br>
+</div>
+  
 -----------------------------------------------------------------------------
 
 
@@ -28,6 +36,9 @@ Credits
  * [**DerpFest**](https://github.com/DerpLab)
  * [**Superior OS**](https://github.com/SuperiorOS)
  * [**ExtendedUI**](https://github.com/Extended-UI) 
+ * [**BlissOS**](https://github.com/BlissRoms-x86)
+ * [**Android-Generic**](https://github.com/android-generic)
+ * [**Android-x86 Project**](https://git.osdn.net/view?a=project_list;pf=android-x86)
 
 Getting started
 ===============
@@ -36,7 +47,7 @@ To get started with Android/Project-Sakura, you'll need to get familiar with [So
 
 To initialize your local repository using the LineageOS trees, use a command like this:
 ```
-repo init --depth=1 -u git://github.com/ProjectSakura/android.git -b 11
+repo init --depth=1 -u git://github.com/supremegamers/android.git -b sakura/11-x86
 ```
 Then to sync up:
 ```
@@ -47,17 +58,16 @@ repo sync --current-branch --force-sync --no-clone-bundle --no-tags --optimized-
 Start the build
 =================
 
-You can use your Lineage OS trees to build Sakura without any changes. 
+Check out Android-Generic documentation for building process
+https://android-generic-project.gitbook.io/documentation/
 
-```bash
-  . build/envsetup.sh
-  lunch lineage_<devicecodename>-userdebug
-  mka bacon -jx
+**What you need to do is just need to build, DO NOT ATTEMPTING TO PATCHING ANYTHING, EVERYTHING IS ALREADY PATCHED**
 ```
------------------------------------------------------------------------------
+. build/envsetup.sh
+ag-menu pc
+```
+Choose 10-build-options and picking your own options and start building
 
-Sponsored by
-==============
-<p align="center"> 
-<a href="https://my.xsl.tel/"><img src="https://i.imgur.com/yOcPbYf.png" alt="xsltel" height="100" width="400"></a> 
-</p>
+
+
+-----------------------------------------------------------------------------
