@@ -8,7 +8,9 @@
     <project name="vendor_foss" path="vendor/foss" remote="BR-x86" revision="foss-minimal" />
     
     <!-- Gearlock -->
+<!--
     <project name="gearlock" path="vendor/gearlock" remote="axon" revision="main" />
+-->
 
 	<project path="external/protobuf" name="platform/external/protobuf" remote="aosp" revision="android11-release" clone-depth="1" />
 	<project path="external/llvm" name="platform/external/llvm" remote="aosp" revision="android11-release" />
