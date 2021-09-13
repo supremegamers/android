@@ -61,7 +61,7 @@ Start the build
 Check out Android-Generic documentation for building process
 https://android-generic-project.gitbook.io/documentation/
 
-**What you need to do is just need to build, DO NOT ATTEMPTING TO PATCHING ANYTHING, EVERYTHING IS ALREADY PATCHED**
+**What you need to do is just need to build, DO NOT ATTEMPTING TO PATCH ANYTHING, EVERYTHING IS ALREADY PATCHED**
 ```
 . build/envsetup.sh
 ag-menu pc
