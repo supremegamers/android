@@ -20,5 +20,7 @@
 -->
     <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" remote="aosp" revision="refs/tags/android-10.0.0_r37" clone-depth="1" />
   
-  
+	<project path="external/thermal_daemon" name="thermal_daemon" remote="sg" revision="master" />
+	<project path="vendor/intel/hardware/interfaces" name="vendor-hardware-interfaces" remote="sg" revision="sakura/11-x86" />
+
 </manifest>
