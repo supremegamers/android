@@ -8,6 +8,6 @@
 	<project path="kernel" name="kernel/common" remote="x86" revision="kernel-4.19" />
 	<project path="kernel" name="kernel/common" remote="aosp" revision="4fd92aab91320f10627d288eb4b6f973ece3b01c" />
 	-->  
-	<project path="kernel" name="Darkmatter-kernel" remote="hm" revision="pledge-xanmod" />
-	<project path="external/kernel-drivers" name="external_kernel-drivers" remote="sg" revision="darkmatter" />
+	<project path="kernel" name="Darkmatter-kernel" remote="hm" revision="umbral" />
+	<project path="external/kernel-drivers" name="external_kernel-drivers" remote="sg" revision="5.15" />
 </manifest>
