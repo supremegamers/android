@@ -2,7 +2,7 @@
 <manifest>
 
   <!--Project Sakura Additions -->
-  <project path="android" name="android" remote="sg" />  
+  <project path="android" name="android" remote="sg" revision="sakura/11-x86" />  
   <project path="art" name="art" groups="pdk" remote="sakura" />  
   <project path="bionic" name="android_bionic" groups="pdk" remote="sg" revision="sakura/11-x86" />  
   <project path="build/make" name="build_make" groups="pdk" remote="sg" revision="sakura/11-x86" >
@@ -14,7 +14,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="sakura" >
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="sg" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
