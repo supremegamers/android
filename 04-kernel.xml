@@ -10,4 +10,5 @@
 	-->  
 	<project path="kernel" name="Darkmatter-kernel" remote="hm" revision="umbral" />
 	<project path="external/kernel-drivers" name="external_kernel-drivers" remote="sg" revision="5.15" />
+	<project path="external/kernel-drivers/rtw88" name="lwfinger/rtw88" remote="github" />
 </manifest>
