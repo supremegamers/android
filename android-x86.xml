@@ -61,7 +61,7 @@
 
     <!-- device/ -->
 
-    <project path="device/generic/common" name="device_generic_common" remote="BR-x86" revision="px86-04.05.21" />
+    <project path="device/generic/common" name="device_generic_common" remote="BR-x86" revision="px86-11.20" />
     <project path="device/generic/firmware" name="device_generic_firmware" remote="hm" revision="main" />
     <project path="device/generic/x86_64" name="device/generic/x86_64" remote="x86" revision="pie-x86" />
     <project path="device/generic/x86" name="device/generic/x86" remote="x86" revision="pie-x86" />
