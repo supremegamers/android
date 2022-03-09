@@ -2,7 +2,6 @@
 <manifest>
     <remote name="maurossi" fetch="https://github.com/maurossi" />
     <remote name="x86" fetch="http://scm.osdn.net/gitroot/android-x86" />
-    <remote name="BR-x86" fetch="https://github.com/BlissRoms-x86" revision="p9.0-x86" />
 
     <remote name="celadon" fetch="https://github.com/projectceladon/" />
     <remote name="kernelorg" fetch="https://git.kernel.org/" />
@@ -13,70 +12,15 @@
     <remote name="chromiumos" fetch="https://chromium.googlesource.com/chromiumos" />
     <remote name="me176c" fetch="https://github.com/me176c-dev/" />
     <remote fetch="https://github.com/" name="ghub"/>
+    <remote fetch="https://github.com/SupremeGamers" name="sg"/>
+    <remote fetch="https://github.com/hmtheboy154" name="hm"/>
 
-    <!-- Modified or unnecessary AOSP projects -->
-
-    <!--
-    <remove-project name="device/generic/common" />
-    <remove-project name="device/generic/qemu" />
-    <remove-project name="device/generic/x86" />
-    <remove-project name="device/generic/x86_64" />
-    <remove-project name="platform/hardware/intel/audio_media" />
-    <remove-project name="platform/hardware/intel/bootstub" />
-    <remove-project name="platform/hardware/intel/common/bd_prov" />
-    <remove-project name="platform/hardware/intel/common/libmix" />
-    <remove-project name="platform/hardware/intel/common/libstagefrighthw" />
-    <remove-project name="platform/hardware/intel/common/libva" />
-    <remove-project name="platform/hardware/intel/common/libwsbm" />
-    <remove-project name="platform/hardware/intel/common/omx-components" />
-    <remove-project name="platform/hardware/intel/common/utils" />
-    <remove-project name="platform/hardware/intel/common/wrs_omxil_core" />
-    <remove-project name="platform/hardware/intel/img/hwcomposer" />
-    <remove-project name="platform/hardware/intel/img/psb_headers" />
-    <remove-project name="platform/hardware/intel/img/psb_video" />
-    <remove-project name="platform/hardware/intel/sensors" />
-    <remove-project name="platform/external/drm_gralloc" />
-    <remove-project name="platform/external/drm_hwcomposer" />
-    <remove-project name="platform/external/libdrm" />
-    <remove-project name="platform/external/libusb-compat" />
-    <remove-project name="platform/external/mesa3d" />
-    <remove-project name="platform/external/swiftshader" />
-    <remove-project name="platform_vendor_qcom_opensource_cryptfs_hw" />
-    <remove-project name="platform/packages/inputmethods/OpenWnn" />
-
-    <remove-project name="platform/packages/apps/Car/Dialer" />
-    <remove-project name="platform/packages/apps/Car/Hvac" />
-    <remove-project name="platform/packages/apps/Car/LatinIME" />
-    <remove-project name="platform/packages/apps/Car/Launcher" />
-    <remove-project name="platform/packages/apps/Car/LensPicker" />
-    <remove-project name="platform/packages/apps/Car/LocalMediaPlayer" />
-    <remove-project name="platform/packages/apps/Car/Media" />
-    <remove-project name="platform/packages/apps/Car/Messenger" />
-    <remove-project name="platform/packages/apps/Car/Overview" />
-    <remove-project name="platform/packages/apps/Car/Radio" />
-    <remove-project name="platform/packages/apps/Car/Settings" />
-    <remove-project name="platform/packages/apps/Car/Stream" />
-    <remove-project name="platform/packages/apps/Car/SystemUpdater" />
-    <remove-project name="platform/packages/apps/Gallery" />
-    <remove-project name="platform/packages/apps/Launcher2" />
-    <remove-project name="platform/packages/apps/LegacyCamera" />
-    <remove-project name="platform/packages/apps/Music" />
-    <remove-project name="platform/packages/apps/MusicFX" />
-    <remove-project name="platform/packages/apps/SecureElement" />
-    <remove-project name="platform/packages/apps/Tag" />
-    <remove-project name="platform/packages/apps/Test/connectivity" />
-    <remove-project name="platform/packages/apps/TvSettings" />
-    <remove-project name="platform/packages/apps/TV" />
-
-    <remove-project name="platform/prebuilts/maven_repo/google-play-service-client-libraries-3p" />
-    <remove-project name="platform/prebuilts/libs/libedit" />
-    -->
     <remove-project name="platform/system/media" />
 
     <!--
     <remove-project name="platform/packages/services/Telecomm" />
     -->
-    <project path="bionic" name="platform_bionic" remote="BR-x86" revision="p9.0-x86" />
+    <project path="bionic" name="platform_bionic" remote="BR-x86" revision="p9.0-x86-new" />
     <project path="manifest" name="manifest" remote="BR-x86" revision="p9.0-x86" />
     <project path="build/make" name="build" remote="BR-x86"  >
         <copyfile src="core/root.mk" dest="Makefile" />
@@ -104,7 +48,7 @@
     <!-- Gearlock Recovery -->
     <remote name="gl" fetch="https://gitlab.com" />
     <project name="AXIM0S/gearlock" path="vendor/gearlock" remote="ghub" revision="main" />
-    <project name="AXIM0S/rusty-magisk" path="rusgik" remote="ghub" revision="568ca9e1774846aa4592801054d24989f3f4fd9d" />
+
     
     <!-- Houdini sfs -->    
 <!--
@@ -118,27 +62,25 @@
     <!-- device/ -->
 
     <project path="device/generic/common" name="device_generic_common" remote="BR-x86" revision="px86-04.05.21" />
-    <project path="device/generic/firmware" name="platform_device_generic_firmware" remote="BR-x86" revision="dev.kernel.org-testing" />
+    <project path="device/generic/firmware" name="device_generic_firmware" remote="hm" revision="main" />
     <project path="device/generic/x86_64" name="device/generic/x86_64" remote="x86" revision="pie-x86" />
     <project path="device/generic/x86" name="device/generic/x86" remote="x86" revision="pie-x86" />
     <project path="device/sample" name="device/sample" remote="aosp" groups="pdk" /> 
 
     <!-- external/ -->
-	<project path="external/libncurses" name="android_external_libncurses" remote="BR-x86" revision="6.2_20210102" />
-    <project path="external/alsa-lib" name="platform_external_alsa-lib" remote="BR-x86" revision="px86-04.02.21" />
-    <project path="external/alsa-utils" name="platform_external_alsa-utils" remote="BR-x86" revision="px86-04.02.21" />
-    <project path="external/bison" name="platform/external/bison" remote="aosp" groups="pdk" revision="master" />
+	<project path="external/libncurses" name="platform/external/libncurses" remote="x86" revision="pie-x86" />
+  <project path="external/alsa-lib" name="alsa-lib" remote="sg" revision="pie-x86" />
+  <project path="external/alsa-utils" name="alsa-utils" remote="sg" revision="pie-x86" />
+  <project path="external/alsa-ucm-conf" name="alsa-ucm-conf" remote="sg" revision="pie-x86" />
     <project path="external/bluetooth/bluez" name="platform_external_bluetooth_bluez" remote="BR-x86" revision="p9.0" />
     <project path="external/busybox" name="platform_external_busybox" remote="BR-x86" revision="p9.0-r2" />
     <project path="external/efibootmgr" name="platform_external_efibootmgr" remote="BR-x86" revision="p9.0-ax86" />
     <project path="external/efivar" name="platform_external_efivar" remote="BR-x86" revision="p9.0-ax86" />
     <project path="external/eject" name="platform_external_eject" remote="BR-x86" revision="p9.0" />
-    <project path="external/kernel-drivers" name="external_kernel-drivers" remote="BR-x86" revision="p9.0-x86-test" />
-    
-    <project path="external/llvm70" name="platform_external_llvm70" remote="BR-x86" revision="pie-x86_llvm70-r341512" groups="pdk" />
-    <project path="external/llvm80" name="platform_external_llvm" remote="BR-x86" revision="p9.0-x86-llvm80" />
-    <project path="external/llvm90" name="platform/external/llvm" remote="x86" revision="pie-x86" />
-    <project path="external/llvm-project" name="llvm-project" remote="maurossi" revision="release_11.x" />
+	<project path="external/kernel-drivers" name="external_kernel-drivers" remote="sg" revision="5.15" />
+	<project path="external/kernel-drivers/rtw88" name="lwfinger/rtw88" remote="github" revision="master" />
+
+    <project path="external/llvm-project" name="llvm" remote="hm" revision="release_13.x" />
     
 <!--
     <project path="external/mesa" name="platform_mesa" remote="BR-x86" revision="19.3.5-llvm90" />
@@ -155,23 +97,24 @@
 	
     <!-- END SUPERSU -->
     <project path="external/IA-Hardware-Composer" name="platform/external/IA-Hardware-Composer" remote="x86" revision="pie-x86" />
-    <project path="external/gbm_gralloc" name="platform/external/gbm_gralloc" remote="x86" revision="pie-x86" />
-    <project path="external/minigbm" name="platform/external/minigbm" remote="x86" revision="pie-x86" />
+    <project path="external/gbm_gralloc" name="gbm_gralloc" remote="BR-x86" revision="s-x86-r1.2" />
+    <project path="external/minigbm" name="minigbm" remote="maurossi" revision="gbm_mesa_y22_w02_R" />
     <project path="external/minigbm_intel" name="platform/external/minigbm" remote="x86" revision="pie-x86_intel" />
     <project path="external/drm_framebuffer" name="platform/external/drm_framebuffer" remote="x86" revision="pie-x86" />
-    <project path="external/drm_gralloc" name="platform/external/drm_gralloc" remote="x86" revision="pie-x86" />
+    <project path="external/drm_gralloc" name="hardware_drm_gralloc" remote="maurossi" revision="mesa-21.2" />
 <!--
     <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" remote="x86" revision="pie-x86" />
 -->
-	<project path="external/drm_hwcomposer" name="drm_hwcomposer" remote="maurossi" revision="blueprint_pie-x86_w45_2020" />
+	<project path="external/drm_hwcomposer" name="drm_hwcomposer" remote="maurossi" revision="blueprint_pie-x86_y22_w05" />
     <project path="external/drmfb-composer" name="platform/external/drmfb-composer" remote="x86" revision="pie-x86" />
   
     <project path="external/ffmpeg" name="external_ffmpeg" remote="maurossi" revision="pie-x86" />
 <!--
     <project path="external/libdrm" name="platform/external/libdrm" remote="x86" revision="pie-x86" />
 -->
-	<project path="external/libdrm" name="drm" remote="maurossi" revision="2.4.102_pie-x86_blueprint" />
-    <project path="external/mesa" name="platform/external/mesa" remote="x86" revision="pie-x86" />
+	<project path="external/libdrm" name="drm" remote="maurossi" revision="2.4.109_r-x86" />
+    <project path="external/ntfs-3g" name="ntfs-3g" remote="sg" revision="pie-x86" />
+    <project path="external/mesa" name="mesa" remote="maurossi" revision="21.2.6_kati" />
     <project path="external/swiftshader" name="platform/external/swiftshader" remote="x86" revision="pie-x86" />
     <project path="external/s2tc" name="platform_external_s2tc" remote="BR-x86" revision="p9.0" />
     <project path="external/stagefright-plugins" name="platform/external/stagefright-plugins" remote="x86" revision="pie-x86" />
@@ -182,9 +125,9 @@
 
     <!-- frameworks/ -->
 
-    <project path="frameworks/av" name="frameworks_av" remote="BR-x86" revision="p9.0-11.12" />
-    <project path="frameworks/base" name="platform_frameworks_base" remote="BR-x86" revision="p9.0-11.13" />
-    <project path="frameworks/native" name="frameworks_native" remote="BR-x86" revision="p9.0-06.23.20" />
+    <project path="frameworks/av" name="frameworks_av" remote="BR-x86" revision="p9.0-11.20" />
+    <project path="frameworks/base" name="platform_frameworks_base" remote="BR-x86" revision="p9.0-11.20" />
+    <project path="frameworks/native" name="frameworks_native" remote="BR-x86" revision="p9.0-11.20" />
 
     <!-- hardware/ -->
 
@@ -195,7 +138,7 @@
     <project path="hardware/intel/common/libva" name="platform_hardware_intel_common_libva" remote="BR-x86" revision="libva_2.3.0" />
     <project path="hardware/intel/common/vaapi" name="platform_hardware_intel_common_vaapi" remote="BR-x86" revision="vaapi_2.2.0" />
     <project path="hardware/intel/libsensors" name="platform/hardware/intel/libsensors" remote="x86" revision="oreo-x86" />
-    <project path="hardware/libaudio" name="platform_hardware_libaudio" remote="BR-x86" revision="p9.0" />
+    <project path="hardware/libaudio" name="platform/hardware/libaudio" remote="x86" revision="pie-x86" />
     <project path="hardware/libcamera" name="platform_hardware_libcamera" remote="BR-x86" revision="p9.0" />
     <project path="hardware/liblights" name="platform/hardware/liblights" remote="x86" revision="oreo-x86" />
     <project path="hardware/libsensors" name="platform_hardware_libsensors" remote="BR-x86" revision="p9.0" />
@@ -204,7 +147,7 @@
 
     <!-- kernel -->
 
-    <project path="kernel" name="kernel_common" remote="BR-x86" revision="k4.19.122-ax86-ga-rmi" />
+    <project path="kernel" name="Darkmatter-kernel" remote="hm" revision="umbral" />
 <!--
 	<project path="kernel" name="kernel/common" remote="x86" revision="kernel-4.19" />
 -->
@@ -212,8 +155,8 @@
         <!-- packages/ -->
     <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" remote="x86" revision="pie-x86" />
 	<project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" remote="x86" revision="pie-x86" />
-    <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="BR-x86" revision="p9.0-x86" />
-    <project path="packages/apps/Settings" name="packages_apps_Settings" remote="BR-x86" revision="p9.0-06.23.20" />
+    <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="BR-x86" revision="p9.0-x86-new" />
+    <project path="packages/apps/Settings" name="packages_apps_Settings" remote="BR-x86" revision="p9.0-11.20" />
 	<project path="packages/apps/TSCalibration2" name="packages_apps_TSCalibration2" remote="BR-x86" revision="p9.0" />
 	<project path="packages/apps/CustomDoze" name="platform_packages_apps_CustomDoze" remote="BR-x86" revision="p9.0" />
 
@@ -225,21 +168,19 @@
     <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" remote="aosp" groups="pdk,linux" revision="master"  clone-depth="1" />
     <!-- system/ -->
 
-    <project path="system/bt" name="platform_system_bt" remote="BR-x86" revision="p9.0-x86" />
-    <project path="system/core" name="platform_system_core" remote="BR-x86" revision="p9.0-03.15.20" />
+    <project path="system/bt" name="platform_system_bt" remote="BR-x86" revision="p9.0-11.20" />
+    <project path="system/core" name="platform_system_core" remote="BR-x86" revision="p9.0-11.20" />
     <project path="system/extras" name="system_extras" remote="BR-x86" revision="p9.0-x86" />
-    <project path="system/media" name="platform/system/media" remote="x86" revision="pie-x86" />
-    <project path="system/vold" name="platform_system_vold" remote="BR-x86" revision="pie-x86" />
+    <project path="system/media" name="platform_system_media" remote="BR-x86" revision="p9.0-x86" />
+    <project path="system/vold" name="platform_system_vold" remote="BR-x86" revision="pie-x86-new" />
 
     <!-- vendor/ -->
 
     <!--<project path="vendor/bliss_priv" name="vendor_bliss_priv" remote="BR-x86" revision="p9.0" />
     <project path="vendor/magisk" name="external_magisk" remote="BR-x86" revision="p9.0" /> -->
-    <project path="vendor/hardware/interfaces" name="vendor-hardware-interfaces" remote="BR-x86" revision="p9.0-x86" />
     <project path="vendor/bliss" name="platform_vendor_bliss" remote="BR-x86" revision="p9.0-11.13" />
     <project path="vendor/x86" name="vendor_x86" remote="BR-x86" revision="p9.0-11.12" />
     <project name="android_vendor_google_chromeos-x86" path="vendor/google/chromeos-x86" remote="BR-x86" revision="13421.73.0_nocturne" />
-	<project path="vendor/surface-drivers" name="external_surface-drivers" remote="BR-x86" revision="q10-07.25.20" />
     
     <!-- START X86 INSTALLER -->
     <project path="x86_installer" name="BlissRoms-x86/Androidx86-Installer-for-Windows" revision="master" remote="github" /> 

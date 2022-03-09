@@ -3,18 +3,6 @@
 	<remote name="fdroid" fetch="https://gitlab.com/fdroid/" />
 	<remote name="phh" fetch="https://github.com/phhusson/" />
 	<remote name="bbpv" fetch="https://gitlab.com/Bliss-Bass/" />
-
-	<project name="vendor-fdroid" path="vendor/fdroid" remote="bbpv" revision="p9.0-gms-testing" />
-		
-	<!--
-	<project name="lineageos4microg/android_prebuilts_prebuiltapks" path="vendor/fdroid" remote="github" revision="master" />
-	
-	<project name="android_vendor_microg" path="vendor/microg" remote="BR-x86" revision="p9.0" />
-	-->
-	
-	<project path="packages/apps/FDroidPrivilegedExtension"
-		name="privileged-extension.git" remote="fdroid"
-		revision="refs/tags/0.2.7" />
 	<project name="vendor_foss" path="vendor/foss" 
 		remote="BR-x86" revision="foss-04.01.21" />
 </manifest>
