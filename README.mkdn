@@ -47,7 +47,7 @@ To get started with Android/Project-Sakura, you'll need to get familiar with [So
 
 To initialize your local repository using the LineageOS trees, use a command like this:
 ```
-repo init --depth=1 -u git://github.com/supremegamers/android.git -b sakura/11-x86
+repo init --depth=1 -u https://github.com/supremegamers/android.git -b sakura/11-x86
 ```
 Then to sync up:
 ```
