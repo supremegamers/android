@@ -585,7 +585,7 @@
   <project path="system/libsysprop" name="platform/system/libsysprop" groups="pdk" remote="aosp" />
   <project path="system/libufdt" name="LineageOS/android_system_libufdt" groups="pdk" />
   <project path="system/libvintf" name="platform/system/libvintf" groups="pdk" remote="aosp" />
-  <project path="system/linkerconfig" name="platform/system/linkerconfig" groups="pdk" remote="aosp" />
+  <project path="system/linkerconfig" name="android_system_linkerconfig" groups="pdk" remote="sg" />
   <project path="system/media" name="supremegamers/android_system_media" groups="pdk" revision="sakura/11-x86" />
   <project path="system/memory/libion" name="platform/system/memory/libion" groups="pdk" remote="aosp" />
   <project path="system/memory/libmeminfo" name="platform/system/memory/libmeminfo" groups="pdk" remote="aosp" />
