@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <!-- FOSS Apps -->
-    <project name="vendor_foss" path="vendor/foss" remote="BR-x86" revision="foss-minimal" />
+    <project name="vendor_foss" path="vendor/foss" remote="sg" revision="hmchoice" />
     
     <!-- Gearlock -->
 <!--
