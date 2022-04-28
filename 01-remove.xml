@@ -2,4 +2,6 @@
 <manifest>
 	<!-- Remove first some AOSP repos -->
 	<remove-project name="platform/tools/repohooks" />
+	<remove-project name="LineageOS/android_device_qcom_sepolicy" />
+	<remove-project name="LineageOS/android_device_qcom_sepolicy_vndr" />
 </manifest>
