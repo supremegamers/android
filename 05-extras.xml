@@ -8,6 +8,10 @@
     <project name="gearlock" path="vendor/gearlock" remote="axon" revision="main" />
 -->
 
+    <!-- BoringDroid -->
+    <project name="vendor_boringdroid" path="vendor/boringdroid" remote="sg" revision="sakura/11-x86" />
+    <project name="vendor_prebuilts_bdapps" path="vendor/prebuilts/bdapps" remote="bd" revision="boringdroid-11.0.0" />
+
 	<project path="external/protobuf" name="platform/external/protobuf" remote="aosp" revision="android11-release" clone-depth="1" />
 	<project path="external/llvm" name="platform/external/llvm" remote="aosp" revision="android11-release" />
 	
