@@ -29,6 +29,10 @@
            fetch="."
            revision="kasumi-v1" />
 
+  <remote  name="kasumi-polycule"
+           fetch="https://git.polycule.co/ProjectKasumi/android"
+           revision="kasumi-v1" />
+
   <default revision="refs/heads/lineage-18.1"
            remote="github"
            sync-c="true"
