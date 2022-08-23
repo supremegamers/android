@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project path="bionic" name="android_bionic" remote="sg" revision="sakura/11-x86" />
+  <project path="bionic" name="android_bionic" remote="sg" revision="kasumi/11-x86" />
   <project path="external/tuuru" name="external_tuuru" remote="sg" revision="kasumi/11-x86" />
   <project path="frameworks/av" name="android_frameworks_av" remote="sg" revision="kasumi/11-x86" />
   <project path="frameworks/base" name="android_frameworks_base" remote="sg" revision="kasumi/11-x86" />
