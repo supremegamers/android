@@ -30,7 +30,7 @@
            revision="kasumi-v1" />
 
   <remote  name="kasumi"
-           fetch="."
+           fetch="https://github.com/ProjectKasumi"
            revision="kasumi-v1" />
 
   <remote  name="kasumi-polycule"
