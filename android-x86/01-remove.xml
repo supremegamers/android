@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<!-- Remove first some AOSP repos -->
+	<remove-project name="platform/tools/repohooks" />
+	<remove-project name="bionic" />
+	<remove-project name="LineageOS/android_device_qcom_sepolicy" />
+	<remove-project name="LineageOS/android_device_qcom_sepolicy_vndr" />
+    <remove-project name="platform/external/drm_hwcomposer" />
+    <remove-project name="platform/external/libdrm" />
+    <remove-project name="LineageOS/android_external_libncurses" />
+    <remove-project name="LineageOS/android_external_mksh" />
+    <remove-project name="platform/external/minigbm" />
+    <remove-project name="device/generic/common" />
+    <remove-project name="device/generic/x86_64" />
+    <remove-project name="device/generic/x86" />
+    <remove-project name="device/google/cuttlefish" />
+    <remove-project name="device/google/cuttlefish_kernel" />
+    <remove-project name="platform/external/angle" />
+    <remove-project name="platform/external/mesa3d" />
+    <remove-project name="platform/external/squashfs-tools" />
+    <remove-project name="external_tuuru" />   
+    <remove-project name="frameworks_av" />   
+    <remove-project name="frameworks_base" />   
+    <remove-project name="frameworks_native" />   
+    <remove-project name="packages_apps_Settings" />   
+    <remove-project name="system_bt" />   
+    <remove-project name="system_core" />   
+    <remove-project name="platform/system/hardware/interfaces" />   
+    <remove-project name="android_system_linkerconfig" />   
+    <remove-project name="android_system_vold" />   
+    <remove-project name="vendor_kasumi" />   
+
+</manifest>

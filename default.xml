@@ -17,6 +17,10 @@
            revision="refs/heads/lineage-18.1"
            fetch="https://gitlab.com/" />
 
+  <remote  name="sg"
+           fetch="https://github.com/supremegamers"
+           revision="kasumi/11-x86"  />
+
   <remote  name="materium"
            fetch="https://github.com/Materium-Old-11"
            revision="materium-v1" />
@@ -40,7 +44,7 @@
 
   <!-- AOSP Projects -->
 
-  <project path="build/make" name="build_make" groups="pdk" remote="kasumi" upstream="https://github.com/LineageOS/android_build|lineage-18.1" mirror="https://github.com/ProjectKasumi/build_make" >
+  <project path="build/make" name="build_make" groups="pdk" remote="sg" upstream="https://github.com/LineageOS/android_build|lineage-18.1" mirror="https://github.com/supremegamers/build_make" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -50,7 +54,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <project path="build/blueprint" name="LineageOS/android_build_blueprint" groups="pdk,tradefed" />
-  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="kasumi" upstream="https://github.com/LineageOS/android_build_soong|lineage-18.1" mirror="https://github.com/ProjectKasumi/build_soong" >
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="sg" upstream="https://github.com/LineageOS/android_build_soong|lineage-18.1" mirror="https://github.com/supremegamers/build_soong" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -794,9 +798,17 @@
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" remote="aosp" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" remote="aosp" />
 
+  <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
   <include name="snippets/lineage.xml" />
   <include name="snippets/materium.xml" />
   <include name="snippets/kasumi.xml" />
+  <include name="android-x86/00-remotes.xml" />
+  <include name="android-x86/01-remove.xml" />
+  <include name="android-x86/02-android-x86.xml" />
+  <include name="android-x86/03-device.xml" />
+  <include name="android-x86/04-kernel.xml" />
+  <include name="android-x86/05-extras.xml" />
+  <include name="android-x86/06-others.xml" />
+  <include name="android-x86/07-modified.xml" />
 
-  <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 </manifest>
