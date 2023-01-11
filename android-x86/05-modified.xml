@@ -19,6 +19,7 @@
   <project path="system/linkerconfig" name="android_system_linkerconfig" remote="sg" revision="lmodroid/13-x86" />
   <project path="system/vold" name="platform_system_vold" remote="sg" revision="lmodroid/13-x86" />
   <project path="system/hardware/interfaces" name="platform_system_hardware_interfaces" remote="sg" revision="lmodroid/13-x86" />
+  <project path="toolchain/pgo-profiles" name="platform_toolchain_pgo-profiles" remote="sg" revision="lmodroid/13-x86" />
   <project path="vendor/lmodroid" name="vendor_lineage" remote="sg" revision="lmodroid/13-x86" />
 
 </manifest>

@@ -29,6 +29,7 @@
     <remove-project name="LMODroid/platform_packages_modules_Bluetooth" />
     <remove-project name="LMODroid/platform_system_core" />
     <remove-project name="android_system_media" />
+    <remove-project name="toolchain/pgo-profiles" />
     <remove-project name="platform/system/hardware/interfaces" />   
     <remove-project name="platform/system/linkerconfig" />
     <remove-project name="android_system_vold" />
