@@ -5,6 +5,7 @@
 	<remove-project name="LMODroid/manifest" />
 	<remove-project name="platform/art" />
 	<remove-project name="LMODroid/platform_bionic" />
+    <remove-project name="LMODroid/platform_build_soong" />
     <!--<remove-project name="platform/development" />
     <remove-project name="platform_bootable_recovery" /> -->
     <remove-project name="platform/external/drm_hwcomposer" />

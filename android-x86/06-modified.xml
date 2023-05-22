@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project path="manifest" name="android" remote="sg" revision="lmodroid/13-x86" />
+  <project path="build/soong" name="build_soong" remote="sg" revision="lmodroid/13-x86" >
+      <linkfile src="root.bp" dest="Android.bp" />
+      <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
   <project path="art" name="platform_art" remote="sg" revision="lmodroid/13-x86" />
   <project path="bionic" name="android_bionic" remote="sg" revision="lmodroid/13-x86" />
   <!-- <project path="bootable/recovery" name="platform_bootable_recovery" remote="BR-x86" revision="arcadia-x86" /> -->
