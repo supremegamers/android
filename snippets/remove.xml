@@ -22,6 +22,7 @@
     <remove-project name="device/google/bluejay-sepolicy" />
     <remove-project name="device/google/bramble" />
     <remove-project name="device/google/bramble-sepolicy" />
+    <remove-project name="device/google/contexthub" />
     <remove-project name="device/google/coral" />
     <remove-project name="device/google/coral-kernel" />
     <remove-project name="device/google/coral-sepolicy" />
@@ -40,20 +41,27 @@
     <remove-project name="device/google/trout" />
     <remove-project name="device/google_car" />
 
+    <!-- Development -->
+    <remove-project name="platform/development" />
+
     <!-- External -->
     <remove-project name="platform/external/android-nn-driver" />
     <remove-project name="platform/external/armnn" />
     <remove-project name="platform/external/avb" />
     <remove-project name="platform/external/chromium-webview" />
     <remove-project name="platform/external/cldr" />
+    <remove-project name="platform/external/dtc" />
     <remove-project name="platform/external/e2fsprogs" />
     <remove-project name="platform/external/exfatprogs" />
     <remove-project name="platform/external/gptfdisk" />
     <remove-project name="platform/external/icu" />
     <remove-project name="platform/external/libcxx" />
+    <remove-project name="platform/external/libvpx" />
+    <remove-project name="platform/external/libxml2" />
     <remove-project name="platform/external/mksh" />
     <remove-project name="platform/external/setupcompat" />
     <remove-project name="platform/external/tinycompress" />
+    <remove-project name="platform/external/webp" />
     <remove-project name="platform/external/wpa_supplicant_8" />
     <remove-project name="platform/external/zstd" />
 
@@ -63,16 +71,19 @@
     <remove-project name="platform/frameworks/libs/net" />
     <remove-project name="platform/frameworks/libs/systemui" />
     <remove-project name="platform/frameworks/native" />
+    <remove-project name="platform/frameworks/opt/colorpicker" />
     <remove-project name="platform/frameworks/opt/telephony" />
     <remove-project name="platform/frameworks/opt/timezonepicker" />
 
     <!-- Hardware -->
+    <remove-project name="platform/hardware/broadcom/libbt" />
     <remove-project name="platform/hardware/google/gchips" />
     <remove-project name="platform/hardware/google/graphics/common" />
     <remove-project name="platform/hardware/google/pixel" />
     <remove-project name="platform/hardware/google/pixel-sepolicy" />
     <remove-project name="platform/hardware/interfaces" />
     <remove-project name="platform/hardware/libhardware" />
+    <remove-project name="platform/hardware/libhardware_legacy" />
     <remove-project name="platform/hardware/qcom/audio" />
     <remove-project name="platform/hardware/qcom/camera" />
     <remove-project name="platform/hardware/qcom/display" />
@@ -80,12 +91,17 @@
     <remove-project name="platform/hardware/qcom/gps" />
     <remove-project name="platform/hardware/qcom/media" />
     <remove-project name="platform/hardware/qcom/sdm845/display" />
+    <remove-project name="platform/hardware/qcom/sdm845/gps" />
     <remove-project name="platform/hardware/qcom/sdm845/media" />
+    <remove-project name="platform/hardware/qcom/sm7150/gps" />
     <remove-project name="platform/hardware/qcom/sm7250/display" />
+    <remove-project name="platform/hardware/qcom/sm7250/gps" />
     <remove-project name="platform/hardware/qcom/sm7250/media" />
     <remove-project name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" />
     <remove-project name="platform/hardware/qcom/sm8150/display" />
+    <remove-project name="platform/hardware/qcom/sm8150/gps" />
     <remove-project name="platform/hardware/qcom/sm8150/media" />
+    <remove-project name="platform/hardware/qcom/sm8150p/gps" />
     <remove-project name="platform/hardware/qcom/wlan" />
     <remove-project name="platform/hardware/ril" />
 
@@ -121,6 +137,7 @@
     <remove-project name="platform/packages/modules/Bluetooth" />
     <remove-project name="platform/packages/modules/common" />
     <remove-project name="platform/packages/modules/Connectivity" />
+    <remove-project name="platform/packages/modules/NeuralNetworks" />
     <remove-project name="platform/packages/modules/Permission" />
     <remove-project name="platform/packages/modules/Virtualization" />
     <remove-project name="platform/packages/modules/Wifi" />
@@ -132,6 +149,7 @@
     <remove-project name="platform/packages/providers/DownloadProvider" />
     <remove-project name="platform/packages/providers/MediaProvider" />
     <remove-project name="platform/packages/providers/TelephonyProvider" />
+    <remove-project name="platform/packages/services/AlternativeNetworkAccess" />
     <remove-project name="platform/packages/services/Mms" />
     <remove-project name="platform/packages/services/Telecomm" />
     <remove-project name="platform/packages/services/Telephony" />
@@ -156,5 +174,8 @@
     <remove-project name="platform/system/tools/mkbootimg" />
     <remove-project name="platform/system/update_engine" />
     <remove-project name="platform/system/vold" />
+
+    <!-- Tools -->
+    <remove-project name="platform/tools/apksig" />
 
 </manifest>
