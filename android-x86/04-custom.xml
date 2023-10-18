@@ -6,6 +6,6 @@
 	<!-- Device tree -->
 	<project path="device/generic/common" name="device_generic_common" remote="sg" sync-s="true" revision="lmodroid/13-x86" />
 	<project path="device/generic/x86_64" name="device_generic_x86_64" remote="sg" revision="lmodroid/12l-x86" />
-	<project path="device/generic/x86" name="device/generic/x86" remote="x86" revision="r-x86" />
+	<project path="device/generic/x86" name="device_generic_x86" remote="sg" revision="r-x86" />
 
 </manifest>
