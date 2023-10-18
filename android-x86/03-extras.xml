@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- FOSS Apps -->
+    <project name="vendor_foss" path="vendor/foss" remote="sg" revision="hmchoice" />
+
+    <!-- Android-Generic Apps -->
+    <project name="android-generic/vendor_prebuilts_agp-apps" path="vendor/prebuilts/agp-apps" remote="gl" revision="master" />
+
+    <!-- nano -->
+    <project name="android_external_nano" path="external/nano" remote="ag-github" revision="7.2" />
+
+</manifest>

@@ -1188,10 +1188,9 @@
   <include name="android-x86/00-remotes.xml" />
   <include name="android-x86/01-remove.xml" />
   <include name="android-x86/02-android-x86.xml" />
-  <include name="android-x86/03-device.xml" />
-  <include name="android-x86/04-kernel.xml" />
-  <include name="android-x86/05-extras.xml" />
-  <include name="android-x86/06-modified.xml" />
+  <include name="android-x86/03-extras.xml" />
+  <include name="android-x86/04-custom.xml" />
+  <include name="android-x86/05-modified.xml" />
 
   <!-- END open-source projects -->
 </manifest>
