@@ -7,7 +7,6 @@
   </project>
   <project path="art" name="platform_art" remote="sg" revision="lmodroid/13-x86" />
   <project path="bionic" name="android_bionic" remote="sg" revision="lmodroid/13-x86" />
-  <!-- <project path="bootable/recovery" name="platform_bootable_recovery" remote="BR-x86" revision="arcadia-x86" /> -->
   <project path="external/mksh" name="android_external_mksh" remote="sg" revision="lmodroid/13-x86" />
   <project path="frameworks/av" name="android_frameworks_av" remote="sg" revision="lmodroid/13-x86" />
   <project path="frameworks/base" name="android_frameworks_base" remote="sg" revision="lmodroid/13-x86" />
