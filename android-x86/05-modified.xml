@@ -8,6 +8,7 @@
   <project path="art" name="platform_art" remote="sg" revision="lmodroid/13-x86" />
   <project path="bionic" name="android_bionic" remote="sg" revision="lmodroid/13-x86" />
   <project path="external/mksh" name="android_external_mksh" remote="sg" revision="lmodroid/13-x86" />
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="ag-github" revision="20240316" />
   <project path="frameworks/av" name="android_frameworks_av" remote="sg" revision="lmodroid/13-x86" />
   <project path="frameworks/base" name="android_frameworks_base" remote="sg" revision="lmodroid/13-x86" />
   <project path="frameworks/native" name="android_frameworks_native" remote="sg" revision="lmodroid/13-x86" />
